@@ -1,0 +1,605 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+@font-face {
+  font-family: "Hahmlet-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/Hahmlet-Regular.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  display: block;
+}
+html,
+body {
+  overflow-x: hidden;
+}
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Hahmlet-Regular";
+  background-color: black;
+  min-height: 600px;
+  cursor: default;
+}
+/* === Scroll Bar === */
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  height: 13px;
+  background: whitesmoke;
+  border-radius: 5px;
+}
+
+body::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+/* ===CSS Start=== */
+/* === Fixed === */
+.fixed {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+.fixed .logo {
+  width: 200px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.fixed .logo img {
+  width: 100%;
+  object-fit: cover;
+  -webkit-mix-blend-mode: difference;
+  mix-blend-mode: difference;
+  cursor: none;
+}
+.mode {
+  position: absolute;
+  right: 30px;
+}
+.mode input {
+  display: none;
+}
+.mode label {
+  color: #13374b;
+}
+.mode label i {
+  font-size: 1.5em;
+  margin-left: 10px;
+  cursor: pointer;
+  cursor: none;
+}
+#day:checked + label,
+#night:checked + label {
+  color: #e1eced;
+}
+
+/* === Header === */
+header {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: url(../img/dsc.jpg) center center no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+header .welcome {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+header .welcome h3 {
+  font-size: 15em;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Source Sans Pro", sans-serif;
+  visibility: inherit;
+}
+header .name {
+  width: 100%;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+header .name h3 {
+  font-size: 10em;
+  color: #fff;
+  text-align: center;
+  font-family: "Source Sans Pro", sans-serif;
+  visibility: inherit;
+}
+header .portfolio {
+  white-space: nowrap;
+  position: absolute;
+  top: 20%;
+  right: 0;
+}
+header .portfolio h2 {
+  font-size: 30em;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: "Source Sans Pro", sans-serif;
+  -webkit-mix-blend-mode: difference;
+  mix-blend-mode: difference;
+}
+header .magnet {
+  width: 80px;
+  height: 80px;
+  border: 2px solid white;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  line-height: 80px;
+}
+header .magnet p {
+  font-size: 1em;
+  color: white;
+  font-family: "Source Sans Pro", sans-serif;
+  cursor: none;
+}
+
+/* === About Me === */
+#About {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  cursor: none;
+}
+#About h2 {
+  width: 100%;
+  font-size: 3em;
+  text-align: center;
+  color: #fff;
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 50px 0 100px 0;
+}
+#About svg {
+  width: 450px;
+  position: absolute;
+  top: 150px;
+  left: 55%;
+  transform: translate(-50%, -50%);
+}
+#About .path {
+  fill: none;
+  stroke: white;
+  stroke-width: 5px;
+}
+
+#About .about-content-wrapper {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  position: absolute;
+  bottom: 50px;
+}
+#About .about-content-wrapper .self {
+  width: 400px;
+  height: 400px;
+}
+#About .about-content-wrapper .self img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#About .about-content-wrapper .about-content-cover {
+  width: 800px;
+  height: 400px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+#About .about-content-wrapper .about-content-cover h3 {
+  width: 100%;
+  padding: 1em;
+  font-size: 2em;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Hahmlet-Regular";
+}
+#About .about-content-wrapper .about-content-cover .about-content-inner {
+  width: 100%;
+  height: 400px;
+  padding: 1em;
+}
+#About .about-content-wrapper .about-content-cover .about-content-inner ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+#About .about-content-wrapper .about-content-cover .about-content-inner li {
+  width: 100%;
+}
+#About .about-content-wrapper .about-content-cover .about-content-inner li p {
+  font-size: 1.3em;
+  text-align: center;
+  font-family: "Hahmlet-Regular";
+  color: #333;
+}
+
+/* === My Skills === */
+#skill {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+#skill h2 {
+  width: 100%;
+  font-size: 3em;
+  text-align: center;
+  color: #fff;
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 50px 0 100px 0;
+}
+#skill .skill-wrapper {
+  width: 100%;
+  height: 100%;
+}
+#skill .skill-wrapper ul {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  cursor: none;
+}
+#skill .skill-wrapper ul li {
+  width: 50%;
+  position: relative;
+  top: 0;
+  left: 0;
+  margin: 0;
+}
+#skill .skill-wrapper ul li img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#skill .skill-wrapper ul li .cover {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+#skill .skill-wrapper ul li .cover p {
+  font-size: 3em;
+  font-weight: bold;
+  color: white;
+  font-family: "Source Sans Pro", sans-serif;
+}
+#skill .skill-wrapper ul li:hover .cover {
+  opacity: 1;
+}
+
+/* === My Project === */
+#project {
+  width: 100%;
+  height: 100vh;
+  background-color: #222;
+}
+#project ul {
+  width: 250%;
+  height: 100%;
+  white-space: nowrap;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+}
+#project ul li {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+#project ul li .project-cover {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+#project ul li a {
+  font-size: 2em;
+  color: #fff;
+  font-weight: bold;
+  font-family: "Source Sans Pro", sans-serif;
+  cursor: pointer;
+  z-index: 2;
+  position: relative;
+  cursor: pointer;
+}
+#project ul li a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: white;
+  border-radius: 50%;
+  transition: width 0.5s ease;
+}
+#project ul li a:hover::before {
+  width: 100%;
+}
+#project ul li:hover .project-cover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+#project ul li:nth-child(2) {
+  background: url(../img/descent.jpg) center center no-repeat;
+  background-size: cover;
+}
+#project ul li:nth-child(3) {
+  background: url(../img/kiaf.jpg) center center no-repeat;
+  background-size: cover;
+}
+#project ul li:nth-child(4) {
+  background: url(../img/deasang.jpg) center center no-repeat;
+  background-size: cover;
+}
+#project ul li:nth-child(5) {
+  background: url(../img/cgv.jpg) center center no-repeat;
+  background-size: cover;
+}
+/* === M-My Project === */
+#m-project {
+  display: none;
+}
+
+/* === My Design === */
+#design {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+#design .first-parallel {
+  font-size: 12em;
+  color: #fff;
+  position: absolute;
+  bottom: 10%;
+  font-family: "Source Sans Pro", sans-serif;
+  text-transform: uppercase;
+  cursor: none;
+}
+#design h2 {
+  width: 100%;
+  height: 80px;
+  font-size: 3em;
+  color: #fff;
+  text-align: center;
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 50px 0;
+}
+#design .swiper {
+  width: 100%;
+  height: calc(100% - 330px);
+  padding-top: 50px;
+  padding-bottom: 50px;
+  cursor: default;
+}
+#design .swiper .swiper-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  cursor: default;
+}
+
+#design .swiper .swiper-wrapper .swiper-slide {
+  width: 500px;
+  height: 500px;
+  cursor: default;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  cursor: default;
+}
+
+/* === Contact === */
+#contact {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+#contact .contact-text-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-right: 50px;
+  box-sizing: border-box;
+}
+#contact .contact-text-wrapper h3 {
+  width: 100%;
+  font-size: 5em;
+  color: #fff;
+  font-weight: bold;
+  font-family: "Hahmlet-Regular";
+  text-align: right;
+  margin-top: 100px;
+}
+#contact .contact-text-wrapper h4 {
+  width: 100%;
+  font-size: 3em;
+  color: #fff;
+  font-weight: bold;
+  text-align: right;
+  font-family: "Hahmlet-Regular";
+  margin: 30px;
+  padding-right: 50px;
+}
+#contact .contact-text-wrapper h4.phone {
+  font-size: 2.5em;
+}
+#contact .contact-text-wrapper .contact-btn {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+}
+#contact .contact-text-wrapper input {
+  width: 100px;
+  height: 30px;
+  border: none;
+  background-color: white;
+  font-size: 1em;
+  font-weight: bold;
+  font-family: "Hahmlet-Regular";
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 30px;
+}
+#contact .circle {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  top: 100px;
+  left: 100px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: none;
+}
+#contact .circle .contact-text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  animation: rotate 10s linear infinite;
+}
+#contact .circle .contact-text span {
+  position: absolute;
+  left: 50%;
+  font-size: 1.2em;
+  transform-origin: 0 75px;
+  font-family: "Source Sans Pro", sans-serif;
+  text-transform: uppercase;
+  color: white;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+#contact .contact-scroll {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -100;
+}
+#contact .contact-scroll h2 {
+  width: 100%;
+  color: #fff;
+  font-family: "Source Sans Pro", sans-serif;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  overflow: hidden;
+  cursor: none;
+}
+#contact .contact-scroll h2 span {
+  display: inline-block;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  font-weight: bold;
+  visibility: inherit;
+  font-size: 10em;
+}
+
+/* === Mouse Cusor === */
+.cursor {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  margin-left: -20px;
+  margin-top: -20px;
+  border-radius: 50%;
+  border: 2px solid white;
+  transition: transform 0.3s ease;
+  transform-origin: center center;
+  pointer-events: none;
+  z-index: 1000;
+  mix-blend-mode: difference;
+}
+
+.grow,
+.grow-small {
+  transform: scale(5);
+  background: #fff;
+  mix-blend-mode: difference;
+  border: none;
+}
+.grow-small {
+  transform: scale(2.5);
+}

@@ -1,0 +1,178 @@
+@media all and (max-width: 1000px) {
+  header .welcome h3 {
+    font-size: 10em;
+  }
+  header .name h3 {
+    font-size: 8em;
+  }
+  header .portfolio h2 {
+    font-size: 23em;
+  }
+  #About svg {
+    width: 350px;
+    position: absolute;
+    top: 150px;
+    left: 58%;
+    transform: translate(-50%, -50%);
+  }
+  #About .about-content-wrapper .self {
+    width: 350px;
+    height: 350px;
+  }
+  #About .about-content-wrapper .about-content-cover {
+    width: 600px;
+    height: 350px;
+  }
+  #About .about-content-wrapper .about-content-cover h3 {
+    font-size: 1.8em;
+    padding: 0.5em;
+  }
+  #About .about-content-wrapper .about-content-cover .about-content-inner li p {
+    font-size: 1.2em;
+  }
+  #contact .contact-text-wrapper h3 {
+    font-size: 3em;
+  }
+  #contact .contact-text-wrapper h4 {
+    font-size: 2.3em;
+  }
+  #contact .contact-text-wrapper h4.phone {
+    font-size: 2em;
+  }
+  #contact .contact-scroll h2 span {
+    font-size: 8em;
+  }
+}
+
+@media all and (max-width: 650px) {
+  header .welcome h3 {
+    font-size: 7em;
+  }
+  header .name {
+    margin-top: 100px;
+  }
+  header .name h3 {
+    font-size: 5em;
+    color: #333;
+  }
+  header .portfolio {
+    top: 35%;
+  }
+  header .portfolio h2 {
+    font-size: 15em;
+  }
+  #About svg {
+    width: 300px;
+    position: absolute;
+    top: 140px;
+    left: 60%;
+    transform: translate(-50%, -50%);
+  }
+  #About .about-content-wrapper {
+    width: 100%;
+    height: 600px;
+    background-color: gray;
+    position: relative;
+    top: 100px;
+    left: 0;
+  }
+  #About .about-content-wrapper .self {
+    position: absolute;
+    width: 400px;
+    height: 500px;
+    top: -50px;
+    right: 0;
+    z-index: 1;
+  }
+  #About .about-content-wrapper .about-content-cover {
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+  }
+  #About .about-content-wrapper .about-content-cover h3 {
+    font-size: 1.5em;
+    color: white;
+  }
+  #About .about-content-wrapper .about-content-cover .about-content-inner li p {
+    font-size: 1.1em;
+    color: #fff;
+  }
+  #skill .skill-wrapper ul li .cover p {
+    font-size: 1.5em;
+  }
+  #project ul li a {
+    font-size: 1.3em;
+    text-align: center;
+  }
+  #project ul li:nth-child(2) {
+    background: url(../img/descent.jpg) 10% center no-repeat;
+    background-size: cover;
+  }
+  #project ul li:nth-child(3) {
+    background: url(../img/kiaf.jpg) 30% center no-repeat;
+    background-size: cover;
+  }
+  #project ul li:nth-child(4) {
+    background: url(../img/deasang.jpg) center center no-repeat;
+    background-size: cover;
+  }
+  #project ul li:nth-child(5) {
+    background: url(../img/cgv.jpg) center center no-repeat;
+    background-size: cover;
+  }
+  #design .swiper .swiper-wrapper .swiper-slide {
+    width: 350px;
+    height: 350px;
+    cursor: default;
+  }
+  #contact .contact-text-wrapper h3 {
+    text-align: left;
+    padding-left: 20px;
+  }
+  #contact .contact-text-wrapper h4 {
+    text-align: left;
+  }
+  #contact .contact-text-wrapper .contact-btn {
+    width: 100%;
+    justify-content: flex-start;
+    padding-left: 30px;
+  }
+  #contact .circle {
+    position: relative;
+    top: calc(50% + 50px);
+    left: calc(50% + 50px);
+  }
+  #contact .contact-scroll h2 span {
+    font-size: 3em;
+  }
+}
+
+@media all and (max-width: 500px) {
+  header .welcome h3 {
+    font-size: 5em;
+  }
+  #contact .contact-text-wrapper {
+    top: 10%;
+  }
+  #contact .contact-text-wrapper h3 {
+    font-size: 2em;
+    padding-left: 23px;
+  }
+  #contact .contact-text-wrapper h4 {
+    font-size: 1.6em;
+  }
+  #contact .contact-text-wrapper h4.phone {
+    font-size: 1.4em;
+  }
+}
+@media all and (max-width: 450px) {
+  header .welcome h3 {
+    font-size: 4em;
+  }
+  header .name h3 {
+    font-size: 4em;
+  }
+}
