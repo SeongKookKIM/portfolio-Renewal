@@ -3,7 +3,7 @@ $(function () {
     .stop()
     .click(function () {
       $("body").stop().css({ backgroundColor: "#fff" });
-      $(".fixed .logo img").attr("src", "../img/gray_logo.png");
+      $(".fixed .logo img").attr("src", "./img/gray_logo.png");
       $("#About h2").css({ color: "#333" });
       $("#About .path").css({ stroke: "#333" });
       $("#design .first-parallel").css({ color: "#333" });
@@ -21,7 +21,7 @@ $(function () {
     .stop()
     .click(function () {
       $("body").stop().css({ backgroundColor: "black" });
-      $(".fixed .logo img").attr("src", "../img/white_logo.png");
+      $(".fixed .logo img").attr("src", "./img/white_logo.png");
       $("#About h2").css({ color: "#fff" });
       $("#About .path").css({ stroke: "#fff" });
       $("#design .first-parallel").css({ color: "#fff" });
